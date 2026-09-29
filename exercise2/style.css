@@ -35,6 +35,10 @@ a:hover{
     color:cadetblue;
 }
 
+a{
+    color:goldenrod;
+}
+
 p a{
     color:goldenrod;
     font-variation-settings: "wght" 500;
