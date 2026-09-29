@@ -7,13 +7,22 @@ p{
     font-variation-settings: "wght" 400;
     font-size: 16px;
     color: gray;
-    padding: 0px 400px 0px 400px;
-    margin-top: 20px;
+    /* padding: 0px 400px 0px 400px; */
+    /* margin-top: 20px; */
     line-height: 22px;
-    width: 60%;
+    /* width: 60%;
+    display: block; */
+    /* position: sticky; */
+    /* align-items: center;
+    justify-content: center; */
+    /* margin: 20 auto;
+    width: 60%; */
+}
+.body_copy{
     display: block;
-    align-items: center;
-    justify-content: center;
+    /* margin: 20 auto; */
+    max-width: 60%;
+    margin: auto;
 }
 
 p:hover{
@@ -57,6 +66,12 @@ h2{
     font-family: "late-serif-variable", sans-serif;
     font-variation-settings: "wght" 600;
     font-size: 18px;
-    padding-left: 400px;
+    line-height: 26px;
+    /* padding: 0px 400px; */
+    /* margin: 20 auto; */
     color:gray;
+    /* width: 60%; */
+}
+h2:hover{
+    color:black;
 }
