@@ -1,0 +1,518 @@
+*{
+    background-color:white;
+    /* gap: 10px; */
+}
+.subheaders{
+    max-width: 60%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
+}
+
+.organization{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    max-width: 80%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.intro_text{
+    align-items: center;
+    max-width: 60%;
+    margin:auto;
+    display: block;
+}
+
+h1{
+    font-family: "area-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 800, "INKT" 0;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(11, 11, 114);
+    padding: 5px 0;
+
+}
+h2{
+
+    font-family: "ff-nexus-typewriter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: rgb(11, 11, 114);
+    display: inline;
+    align-items: justify;
+    margin-right: 100px;
+    margin-left:0px;
+}
+
+
+
+.first_r{
+    position: relative;
+    display:flex;
+}
+.stem{
+    background-color: goldenrod;
+    width: 100px;
+    height: 400px;
+}
+
+.loop1{
+    width:200px;
+    height: 300px;
+    background-color: goldenrod;
+}
+.tail1{
+    width:100px;
+    height: 100px;
+    background-color: goldenrod;
+    position: relative;
+    left:-125px;
+    top: 300px;
+    transform: skewX(20deg);
+
+}
+/* .right-triangle{
+    background-color: red;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 0px 0px 200px;
+    border-color: white transparent transparent transparent;
+    opacity: 0.8;
+    position: relative;
+    top: 200px;
+    left: -200px;
+} */
+
+/* .bottom-right-triangle{
+    width:0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 100px 100px 0px;
+    border-color: transparent transparent white transparent;
+    position: relative;
+    left: -400px;
+    top: 300px;
+    opacity: 0.8;
+} */
+ 
+.second_r{
+    position:relative;
+    display: flex;
+    /* left: -200px; */
+}
+
+.stem2{
+    background-color: orangered;
+    width: 100px;
+    height: 400px;
+}
+.loop{
+   width: 200px;
+   height: 300px;
+   background-color: rgb(255, 204, 0);
+   opacity: 80%;
+   border-radius: 50%;
+   position: relative;
+   left: -100px;
+}
+
+.tail{
+    width: 50px;
+    height: 100px;
+    background-color: rgb(255, 204, 0);
+    opacity: 80%;
+    transform: rotate(-30deg);
+    position:relative;
+    left: -190px;
+    top: 300px;
+}
+
+.third_r{
+    position: relative;
+    display:flex;
+    left: -100px;
+}
+.stem3{
+    width: 50px;
+    height: 400px;
+    background-color:brown;
+}
+
+.loop_top{
+    width: 50px;
+    height: 200px;
+    background-color: brown;
+    transform: rotate(-60deg);
+    position:relative;
+    left:30px;
+    top:-30px;
+}
+
+.loop_bottom{
+    width: 50px;
+    height: 200px;
+    background-color: brown;
+    transform: rotate(60deg);
+    position:relative;
+    top:80px;
+}
+
+.tail3{
+    width: 50px;
+    height: 250px;
+    background-color:brown;
+    transform: rotate(-60deg);
+    position: relative;
+    top: 200px;
+    left: -30px;
+}
+
+.fourth_r{
+    position: relative;
+    display: flex;
+    /* left: -200px; */
+    
+}
+.stem4{
+    width: 50px;
+    height: 400px;
+    border-radius: 30px 10px;
+    background-color:rgb(40, 141, 87);
+}
+.semi_circle{
+    width: 150px;
+    height: 300px;
+    border-radius: 10px 150px 150px 10px;
+    background-color: rgb(40, 141, 87);
+    position: relative;
+    left: -20px;
+}
+
+.tail4{
+    width:50px;
+    height: 200px;
+    border-radius: 30px 10px;
+    background-color: rgb(40, 141, 87);
+    transform: rotate(-20deg);
+    position: relative;
+    left: -150px;
+    top: 200px;
+}
+
+.fifth_r{
+    position:relative;
+    display: flex;
+    /* left: -200px; */
+}
+
+.stem5{
+    height: 400px;
+    width: 100px;
+    background-color: rebeccapurple;
+}
+
+.loop5{
+    width: 500px;
+    height: 300px;
+    border-radius: 0 250px 250px 0;
+    background-color: rebeccapurple;
+}
+
+.tail5{
+    width: 125px;
+    height: 200px;
+    background-color: rebeccapurple;
+    /* border-radius: 50px; */
+    transform: skewX(60deg);
+    position: relative;
+    left: -325px;
+    top: 200px;
+}
+
+/* <---------------------------page 2 ----------------------------------------->*/
+
+.page2Header{
+    display: flex;
+}
+.organization_page2{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    /* flex-direction: column; */
+    max-width: 80%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.animated_r{
+    position: relative;
+    display:flex;
+    left: 100px;
+    
+}
+
+.loop1_animated{
+    width:300px;
+    height: 300px;
+    background-color: goldenrod;
+}
+
+.stem_animated{
+    background-color: goldenrod;
+    position:relative;
+    width: 100px;
+    height: 100px;
+    left: -300px;
+    top: 300px;
+    /* transition: translateX(25px) skewX(-20deg); */
+}
+
+
+.tail1_animated{
+    width:100px;
+    height: 100px;
+    background-color: goldenrod;
+    position: relative;
+    left:-225px;
+    top: 300px;
+    transform: skewX(20deg);
+    /* transition: translateX(25px) skewX(20deg); */
+
+}
+/* .tail1_animated:hover{
+    animation-name: skewTail;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.25s;
+
+} */
+
+@keyframes skewTail {
+    0% {
+        transform: translateX(0px) skewX(20deg);
+    }
+    50%{
+        transform: translateX(25px) skewX(0deg);
+    }
+    100% {
+        transform: translateX(0px) skewX(20deg);
+    }
+}
+
+@keyframes becomeTail{
+    0% {
+        transform: translateX(0px) skewX(0deg);
+        /* background-color: goldenrod; */
+    }
+    50% {
+        transform: translateX(25px) skewX(-20deg);
+        /* background-color: red; */
+    }
+    100%{
+        transform: translateX(0px) skewX(0deg);
+    }
+}
+
+.animated_r:hover .stem_animated{
+    animation-name: becomeTail;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.animated_r:hover .tail1_animated {
+    animation-name: skewTail;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+/* .stem_animated:hover{
+    animation-name: becomeTail;
+    animation-duration: 2s;
+    animation-timing-function: 2s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards
+} */
+
+.animated_r_2{
+    position: relative;
+    display: flex;
+    margin: 100px 0;
+    /* how do i edit vertical margins within parent element */
+    left: 100px;
+}
+.loop2_animated{
+    width:300px;
+    height: 300px;
+    background-color: goldenrod;
+}
+
+.stem2_animated{
+    background-color: goldenrod;
+    position:relative;
+    width: 100px;
+    height: 100px;
+    left: -300px;
+    top: 300px;
+    /* transition: translateX(25px) skewX(-20deg); */
+}
+
+
+.tail2_animated{
+    width:100px;
+    height: 100px;
+    background-color: goldenrod;
+    position: relative;
+    left:-225px;
+    top: 300px;
+    transform: skewX(20deg);
+    /* transition: translateX(25px) skewX(20deg); */
+
+}
+
+@keyframes fallOver{
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+        /* background-color: goldenrod; */
+    }
+    100%{
+        transform: translateX(200px) translateY(220px) rotate(90deg);
+        /* background-color:red; */
+    }
+}
+
+@keyframes legTwitch{
+    0% {
+        transform: translateX(0px) skewX(0deg);
+        background-color: goldenrod;
+    }
+    95%{
+        background-color: goldenrod;
+    }
+    100% {
+        transform: translateX(25px) skewX(-20deg);
+        background-color: red;
+    }
+    /* 100%{
+        transform: translateX(0px) skewX(0deg);
+    } */
+}
+
+@keyframes legTwitch2{
+    0% {
+        transform: translateX(0px) skewX(20deg);
+        background-color: goldenrod;
+    }
+    95%{
+        background-color: goldenrod;
+    }
+    100%{
+        transform: translateX(0px) skewX(0deg);
+        background-color:red;
+    }
+    /* 100% {
+        transform: translateX(0px) skewX(20deg);
+    } */
+}
+
+@keyframes ouch{
+    0%{
+        background-color: goldenrod;
+    }
+    95%{
+        background-color: goldenrod;
+
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+.animated_r_2:hover{
+    animation-name: fallOver;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-timing-function: cubic-bezier(.69,-0.01,.8,.55);
+    animation-fill-mode:forwards;
+}
+
+/* .animated_r_2:hover{
+    animation-name: ouch;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in;
+    animation-fill-mode:forwards;
+} */
+
+.animated_r_2:hover .stem2_animated{
+    animation-name: legTwitch;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+}
+
+.animated_r_2:hover .tail2_animated{
+    animation-name: legTwitch2;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+}
+/*ouch*/
+
+.animated_r_2:hover .loop2_animated{
+    animation-name: ouch;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+}
+
+/* .animated_r_2:hover .tail2_animated{
+    animation-name: ouch;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+}
+
+.animated_r_2:hover .loop2_animated{
+    animation-name: ouch;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+} */
+
+/* .animated_r:hover .tail2_animated {
+    animation-name: skewTail;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+} */
+
+.backButton{
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    position:absolute;
+    padding: 5px;
+}
