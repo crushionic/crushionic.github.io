@@ -260,6 +260,7 @@ h2{
     position: relative;
     display:flex;
     left: 100px;
+
     
 }
 
@@ -357,6 +358,10 @@ h2{
     /* margin: 50px 0; */
     /* how do i edit vertical margins within parent element */
     left: 100px;
+    transition: 2s cubic-bezier(.69,-0.01,.8,.55);
+}
+.animated_r_2:hover{
+    transform: translateX(200px) translateY(220px) rotate(90deg);
 }
 .loop2_animated{
     width:300px;
@@ -445,13 +450,13 @@ h2{
     }
 }
 
-.animated_r_2:hover{
+/* .animated_r_2:hover{
     animation-name: fallOver;
     animation-duration: 2s;
     animation-delay: 0.25s;
     animation-timing-function: cubic-bezier(.69,-0.01,.8,.55);
     animation-fill-mode:forwards;
-}
+} */
 
 /* .animated_r_2:hover{
     animation-name: ouch;
