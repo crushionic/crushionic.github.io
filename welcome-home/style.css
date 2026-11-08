@@ -1,8 +1,60 @@
+
+.centered_org{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    max-width: 45%;
+    margin: 0 auto;
+    /* overflow: auto; */
+    height: 100vh;
+}
+
 h1{
-    font-size: 2em;
-    color:antiquewhite;
+    font-size: 1.5em;
+    color:whitesmoke;
+    font-family: "mandrel-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    /* opacity: 10%;
+    transition: opacity 1s; */
+}
+
+/* h1:hover{
+    opacity: 1;
+} */
+
+h2{
+    font-family: "mandrel-condensed", sans-serif;
+    font-weight: 450;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 a{
     color:antiquewhite;
+}
+
+
+/* ------------------BEDROOM STUFF -------------------------*/
+.bed{
+    position:absolute;
+    transition: opacity 1s ease-in;
+}
+
+.bed img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 40%;
+    opacity: 20%;
+    transition: opacity 0.5s ease-in;
+}
+
+.bed img:hover{
+    opacity: 1;
+}
+
+.bed.active img{
+    opacity:1;
 }
