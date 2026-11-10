@@ -24,7 +24,7 @@ let bulletinBoardOpen=false;
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (event) => {
     const memory_heading = document.querySelector('.memory_heading');
     const done_heading = document.querySelector('.done_heading');
     function everythingOpen(){
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const bed = document.querySelector('.bed');
     
 
-    bed.addEventListener('click', ()=>{
+    bed.addEventListener('click', (event)=>{
         console.log("clicked");
         bed.classList.add('active');
         bedOpened = true;
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const leftshelf = document.querySelector('.left_shelf');
     
 
-    leftshelf.addEventListener('click', () => {
+    leftshelf.addEventListener('click', (event) => {
 
         console.log("shelf clicked");
         leftShelfOpen = true;
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const rightshelf = document.querySelector('.right_shelf');
     
-    rightshelf.addEventListener('click', () => {
+    rightshelf.addEventListener('click', (event) => {
         console.log("right shelf clicked");
         rightShelfOpen=true;
         rightshelf.classList.add('active');
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const desk = document.querySelector('.desk');
     
-    desk.addEventListener('click', () => {
+    desk.addEventListener('click', (event) => {
         console.log("desk clicked");
         deskOpen=true;
         desk.classList.add('active');
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const chair = document.querySelector('.chair');
     
-    chair.addEventListener('click', () => {
+    chair.addEventListener('click', (event) => {
         console.log("chair clicked");
         chairOpen=true;
         chair.classList.add('active');
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const poster = document.querySelector('.poster')
     
-    poster.addEventListener('click', () => {
+    poster.addEventListener('click', (event) => {
         console.log("poster clicked");
         posterOpen = true;
         poster.classList.add('active');
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const bulletinboard = document.querySelector('.bulletin_board')
     
 
-    bulletinboard.addEventListener('click', () => {
+    bulletinboard.addEventListener('click', (event) => {
         console.log("board clicked");
         bulletinBoardOpen = true;
         
