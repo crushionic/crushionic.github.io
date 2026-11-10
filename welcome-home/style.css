@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .centered_org{
     display:flex;
     justify-content: center;
@@ -6,6 +9,12 @@
     max-width: 45%;
     margin: 0 auto;
     /* overflow: auto; */
+    height: 100vh;
+}
+
+.centered_text{
+    display:grid;
+    place-items: center;
     height: 100vh;
 }
 
@@ -32,29 +41,393 @@ h2{
     text-align: center;
 }
 
+p{
+    font-family: "mandrel-condensed", sans-serif;
+    font-weight: 450;
+    font-style: regular;
+    font-size: 0.85em;
+    text-align: left;
+    color: white;
+    filter: blur(4px);
+    transition: filter 2s ease;
+    padding: 20px;
+}
+
+p:hover{
+    filter: blur(0px);
+}
+
 a{
     color:antiquewhite;
 }
 
+.memory_heading{
+    padding-top:20px;
+    visibility: visible;
+}
 
-/* ------------------BEDROOM STUFF -------------------------*/
-.bed{
+.memory_heading.active{
+    visibility: hidden;
+}
+
+.done_heading{
     position:absolute;
+    top: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+
+}
+
+.done_heading.active{
+    visibility: visible;
+}
+
+.bottom_heading{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+/* ------------------BEDROOM STUFF -------------------------*/
+
+.org{
+    display:flex;
+    gap: 20px;
+    top:-20px;
+}
+
+.bed{
+    position:relative;
     transition: opacity 1s ease-in;
+    top: 405px;
+    left: 380px;
 }
 
 .bed img{
     /* position: absolute; */
     object-fit: cover;
-    width: 40%;
-    opacity: 20%;
-    transition: opacity 0.5s ease-in;
+    width: 500px;
+    opacity: 40%;
+    /* transition: opacity 0.5s ease-in; */
+    filter: blur(4px);
+    cursor: pointer;
+    transition: opacity 1s, filter 3s;
 }
 
 .bed img:hover{
     opacity: 1;
+    filter: blur(0px);
 }
 
 .bed.active img{
     opacity:1;
+    filter: blur(2px);
 }
+
+.bed.active img:hover{
+    filter:blur(0);
+}
+
+.left_shelf{
+    position:relative;
+    transition: opacity 1s ease-in;
+    top: 130px;
+    left: 50px;
+}
+
+.left_shelf img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 200px;
+    opacity: 40%;
+    /* transition: opacity 0.5s ease-in; */
+    filter: blur(4px);
+    cursor: pointer;
+    transition: opacity 1s, filter 3s;
+}
+
+.left_shelf img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.left_shelf.active img{
+    opacity:1;
+    filter: blur(2px);
+}
+
+.left_shelf.active img:hover{
+    filter: blur(0);
+}
+
+.boa_video{
+    position: absolute;
+    margin: 0 0;
+}
+.boa_video video{
+    width:750px;
+    filter: blur(2px);
+    transition: filter 2s ease;
+}
+
+.boa_video video:hover{
+    filter: blur(0);
+}
+
+.poster{
+    position:relative;
+    transition: opacity 1s ease-in;
+    left: 35px;
+    top: 180px;
+}
+
+.poster img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 120px;
+    opacity: 65%;
+    /* transition: opacity 0.5s ease-in; */
+    filter: blur(4px);
+    cursor: pointer;
+    transition: opacity 1s, filter 3s;
+}
+
+.poster img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.poster.active img{
+    opacity:1;
+    filter: blur(2px);
+}
+
+.poster.active img:hover{
+    filter: blur(0);
+}
+
+.pofa img{
+    width: 800px;
+    filter: blur(2px);
+    transition: filter 2s ease;
+}
+
+.pofa img:hover{
+    filter: blur(0);
+}
+
+.right_shelf{
+    position:relative;
+    transition: opacity 1s ease-in;
+    top: 125px;
+    left: 0px;
+}
+
+.right_shelf img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 250px;
+    opacity: 40%;
+    /* transition: opacity 0.5s ease-in; */
+    filter: blur(4px);
+    cursor: pointer;
+    transition: opacity 1s, filter 3s;
+}
+
+.right_shelf img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.right_shelf.active img{
+    opacity:1;
+    filter: blur(2px);
+}
+
+.right_shelf.active img:hover{
+    filter: blur(0);
+}
+
+.giants_game img{
+    width:800px;
+    filter: blur(2px);
+    transition: filter 2s ease;
+}
+
+.giants_game img:hover{
+    opacity:1;
+    filter: blur(0);
+}
+
+.desk{
+    position:relative;
+    transition: opacity 1s ease-in;
+    top: 385px;
+    left: -160px;
+    z-index: 7;
+}
+
+.desk img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 300px;
+    opacity: 40%;
+    /* transition: opacity 0.5s ease-in; */
+    filter: blur(4px);
+    cursor: pointer;
+    transition: opacity 1s, filter 3s;
+}
+
+.desk img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.desk.active img{
+    opacity:1;
+    filter: blur(2px);
+}
+
+.desk.active img:hover{
+    filter: blur(0);
+}
+
+.rockyhorror img{
+    width: 450px;
+    filter: blur(2px);
+    transition: filter 2s ease;
+}
+
+.rockyhorror img:hover{
+    filter: blur(0);
+}
+
+.chair{
+    position:relative;
+    transition: opacity 1s ease-in;
+    top: 330px;
+    left: -620px;
+}
+
+.chair img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 210px;
+    opacity: 60%;
+    /* transition: opacity 0.5s ease-in; */
+    filter: blur(4px);
+    cursor: pointer;
+    transition: opacity 1s, filter 3s;
+}
+
+.chair img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.chair.active img{
+    opacity:1;
+    filter: blur(2px);
+}
+
+.chair.active img:hover{
+    filter: blur(0);
+}
+
+.highway img{
+    width: 800px;
+    filter: blur(2px);
+    transition: filter 2s ease;
+}
+
+.highway img:hover{
+    filter: blur(0);
+}
+
+.bulletin_board{
+    position:relative;
+    transition: opacity 1s ease-in;
+    left:-580px;
+    top: 140px;
+}
+
+.bulletin_board img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 170px;
+    opacity: 65%;
+    /* transition: opacity 0.5s ease-in; */
+    filter: blur(4px);
+    cursor: pointer;
+    transition: opacity 1s, filter 3s;
+}
+
+.bulletin_board img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.bulletin_board.active img{
+    opacity:1;
+    filter: blur(2px);
+}
+
+.bulletin_board.active img:hover{
+    filter: blur(0);
+}
+
+.highway img{
+    width: 800px;
+    filter: blur(2px);
+    transition: filter 2s ease;
+}
+
+.highway img:hover{
+    filter: blur(0);
+}
+
+/*---------> TOOL TIP BUSINESS NOT OWRKING ATM
+
+/* .tooltip{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltiptext{
+    visibility: hidden;
+    width: 130px;
+    background-color: black;
+    color: white;
+    text-align:center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip_bed{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 600px;
+    height:400px;
+    background-color: white;
+}
+.tooltip_bed:hover .tooltiptext{
+    visibility: visible;
+    font-family: "mandrel-condensed", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size:0.5em;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    font-family: "mandrel-condensed", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size:0.5em;
+} */
